@@ -94,11 +94,11 @@ mod:hook_safe(ActionCareerBWScholar, "client_owner_start_action", function (self
 	local owner_unit = self.owner_unit
 
     if talent_extension:has_talent("rwaon_sienna_scholar_embodiment_of_aqshy", "bright_wizard", true) then
-        mod:add_buff(owner_unit, "rwaon_sienna_scholar_embodiment_of_aqshy_overcharge")
+        NewTalentsBuffs:add_buff(owner_unit, "rwaon_sienna_scholar_embodiment_of_aqshy_overcharge")
 	end	
 
     if talent_extension:has_talent("rwaon_sienna_scholar_increased_speed", "bright_wizard", true) then
-        mod:add_buff(owner_unit, "rwaon_sienna_scholar_increased_speed")
+        NewTalentsBuffs:add_buff(owner_unit, "rwaon_sienna_scholar_increased_speed")
 	end	
 end)
 
